@@ -24,7 +24,7 @@ const miniCssExtractLoader = {
  */
 const cssLoader = {
   loader: 'css-loader',
-  options: {}
+  options: { importLoaders: 1 }
 }
 
 /**
@@ -35,7 +35,10 @@ const postcssLoader = {
   loader: 'postcss-loader',
   options: {
     postcssOptions: {
-      plugins: ['autoprefixer']
+      plugins: [
+        ['tailwindcss', {}],
+        ['autoprefixer', {}]
+      ]
     }
   }
 }
@@ -58,7 +61,8 @@ module.exports = {
     // Thread loader cannot be used due to this issue:
     // - https://github.com/webpack-contrib/thread-loader/issues/135
     cssLoader,
-    !IS_DEV_MODE && postcssLoader,
+    // !IS_DEV_MODE && postcssLoader,
+    postcssLoader,
     sassLoader
   ].filter(Boolean)
 }
