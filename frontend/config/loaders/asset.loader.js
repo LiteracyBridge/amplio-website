@@ -4,5 +4,5 @@
  */
 module.exports = {
   test: /\.(png|jpe?g|gif|woff|woff2|ttf|otf|mp3)$/i,
-  type: 'asset/resource',
+  type: 'asset/resource'
 }
