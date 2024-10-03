@@ -14,7 +14,7 @@ module.exports = {
     common: ['./js/app', './js/dev/icons', './sass/app']
   },
   resolve: {
-    extensions: ['.js', '.sass', '.png', '.jpg', '.svg'],
+    extensions: ['.js', '.sass', '.png', '.jpg', 'jpeg', 'webp', '.svg'],
     alias: {
       '@': SOURCE_DIR
     }

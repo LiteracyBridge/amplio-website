@@ -1,0 +1,39 @@
+{% set title = "About Us" %}
+{% extends '_layout.njk' %}
+{% block main %}
+    <div class="hero pt-10">
+        <div class="hero-content text-center">
+            <div class="max-w-lg">
+                <h1 class="text-5xl font-bold">About Us</h1>
+                <p class="py-6">
+                    Amplio is a nonprofit organization with a mission to empower the world's most vulnerable communities through knowledge
+                    sharing.
+                </p>
+                {# <button class="btn btn-primary">Get Started</button> #}
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <img
+            src="/images/Samburu.jpg"
+            class="object-fill lg-h-[1px] w-full"
+            alt="Samburu 1200x630.jpg"
+            fetchpriority="high"/>
+    </div>
+
+    <div class="hero min-h-8">
+        <div class="hero-content flex-col lg:flex-row">
+            <img
+                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                class="max-w-sm rounded-lg shadow-2xl"/>
+            <div>
+                <h1 class="text-5xl font-bold">Box Office News!</h1>
+                <p class="py-6">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                    repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
